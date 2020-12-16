@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+::placeholder {
+  color: #bfdcae;
+  opacity: 1;
+}
+
+header .nav_traka {
+  text-align: center;
+  background-color: #206a5d;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header .nav_traka ul {
+  text-decoration: none;
+}
+header .nav_traka ul li {
+  display: inline-block;
+  padding-left: 10px;
+}
+header .nav_traka ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header .nav_traka ul li .red {
+  color: #ff4b5c;
+}
+header .nav_traka ul li .none {
+  display: none;
+}
+header .svetlo_zelena {
+  padding: 70px 30px 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bfdcae;
+}
+header .svetlo_zelena .header_text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .svetlo_zelena .header_text .logo {
+  height: 70px;
+}
+header .svetlo_zelena .header_text h2 {
+  font-family: "Fredoka One", cursive;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+header .svetlo_zelena .header_text h2 .red {
+  color: #ff4b5c;
+}
+header .svetlo_zelena .header_form {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+header .svetlo_zelena .header_form .register .input, header .svetlo_zelena .header_form .register .submit {
+  padding: 8px 25px;
+  border: none;
+  border-radius: 5px;
+  color: #bfdcae;
+}
+header .svetlo_zelena .header_form .register .input {
+  background-color: #206a5d;
+}
+header .svetlo_zelena .header_form .register .submit {
+  background-color: #ff4b5c;
+  cursor: pointer;
+}
+header .svetlo_zelena .header_form .account_text {
+  padding-top: 10px;
+  color: #206a5d;
+}
+header .svetlo_zelena .header_form .account_text .red {
+  color: #ff4b5c;
+  padding-left: 10px;
+}
+
+.prva_sekcija {
+  height: 100vh;
+  background-image: url(../slike/intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.prva_sekcija .naslov {
+  margin-top: 150px;
+  background-color: rgba(0, 0, 0, 0.555);
+  padding: 10px 100px;
+  color: #ffffff;
+  font-family: "Fredoka One", cursive;
+  font-size: 40px;
+}
+.prva_sekcija .join {
+  margin-top: 50px;
+  padding: 10px 15px;
+  background-color: #206a5d;
+  color: #bfdcae;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.druga_sekcija {
+  padding: 50px 30px;
+  background-color: #f1f1e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.druga_sekcija .benefits {
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  color: #206a5d;
+  text-transform: uppercase;
+}
+.druga_sekcija div {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.druga_sekcija div .flexic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+.druga_sekcija div .flexic .picture {
+  height: 15em;
+}
+.druga_sekcija div .flexic .picture:hover {
+  transform: scale(1.3);
+}
+.druga_sekcija div .flexic .block {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  height: 15vh;
+}
+.druga_sekcija div .flexic .block .red {
+  color: #ff4b5c;
+  font-family: "Fredoka One", cursive;
+  margin-top: 1.5em;
+}
+.druga_sekcija div .flexic .block .opis {
+  margin-top: 1em;
+}
+
+.treca_sekcija {
+  padding: 50px 30px;
+}
+.treca_sekcija .about_us {
+  font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+  color: #206a5d;
+  margin-top: 30px;
+}
+.treca_sekcija .lorica {
+  margin-top: 40px;
+  text-align: justify;
+}
+.treca_sekcija .lorica .red {
+  color: #ff4b5c;
+}
+.treca_sekcija .dugmic {
+  display: none;
+  justify-content: flex-end;
+}
+.treca_sekcija .dugmic .Read_more {
+  margin-top: 40px;
+  padding: 10px 15px;
+  color: #bfdcae;
+  background-color: #ff4b5c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 50px 30px;
+  background-color: #206a5d;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .form {
+  padding: 30px;
+  background-color: #9b9b9b;
+  border-radius: 5px;
+  width: 600px;
+}
+.footer .form h2 {
+  text-align: center;
+}
+.footer .form .name, .footer .form .mail {
+  margin-top: 3em;
+  padding: 8px;
+  width: 50%;
+}
+.footer .form .name {
+  float: left;
+}
+.footer .form .mail {
+  float: right;
+}
+.footer .form .subject, .footer .form .message, .footer .form .submit_form {
+  float: left;
+  width: 100%;
+  padding: 8px;
+}
+.footer .maps {
+  margin-left: 15px;
+}
+.footer .maps iframe {
+  border-radius: 5px;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  header .nav_traka ul li .none {
+    display: inline-block;
+  }
+  header .svetlo_zelena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .svetlo_zelena .header_form {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer .maps {
+    margin-left: 0px;
+    margin-bottom: 15px;
+    height: 30em;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .nav_traka {
+    align-items: flex-start;
+    position: static;
+  }
+  header .nav_traka ul {
+    width: 100%;
+  }
+  header .nav_traka ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    padding-left: 0px;
+    background-color: #206a5d;
+    border-bottom: 1px solid #ffffff;
+  }
+  header .svetlo_zelena {
+    display: none;
+  }
+
+  .prva_sekcija {
+    display: none;
+  }
+
+  .druga_sekcija {
+    margin-top: 290px;
+  }
+  .druga_sekcija div .flexic {
+    width: 70%;
+  }
+
+  .treca_sekcija {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .treca_sekcija .lorica {
+    display: none;
+  }
+  .treca_sekcija .dugmic {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .form {
+    width: 100%;
+  }
+  .footer .maps {
+    width: 100%;
+  }
+  .footer .maps iframe {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
